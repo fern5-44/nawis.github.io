@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+    body {margin:0;}
          h2 {
           color: Black;
           font-family: courier;
@@ -23,10 +23,14 @@
         .navbar {
           overflow: hidden;
           background-color: #696969;
+          position: fixed;
+          top: 0;
+          width: 100%;
         }
         
         .navbar a {
           float: left;
+          display: bolck;
           color: #f2f2f2;
           text-align: center;
           padding: 10px 16px;
@@ -43,23 +47,28 @@
           background-color: #D3D3D3;
           color: white;
         }
+         .main {
+            padding: 16px;
+            margin-top: 30px;
+            height: 1500px; /* Used in this example to enable scrolling */
+                }
     </style>
     <head> 
 <!-- Navigationsbar -->
-        <div class="navbar">
-              <a href="index">Home</a>
-              <a class="active" href="#menu">Menu</a>
+              <div class="navbar">
+              <a href="https://s-7-fer.github.io/nawis.github.io/">Home</a>
+              <a href="https://s-7-fer.github.io/nawis.github.io/menu">Menu</a>
               <a href="#contact">Inspiration</a>
-              <a href="One/reference.md">About</a>
+              <a href="https://s-7-fer.github.io/nawis.github.io/One/reference.md">About</a>
         </div>
     </head> 
-
-    
+  
     <body> 
 <!-- Inhalt -->
+<div class="main">
         <h1>Welcome to the Side</h1> 
         <p>Please take a sit</p>
-        <p>Open page 67 in your Coursbook</p>
+        <p>Open page 23 in your Coursbook</p>
         <br>
         <br>
         <h2>Intro</h2>
@@ -72,5 +81,7 @@
         <br>
         <br>
         <a style="color:black;" href="https://s-7-fer.github.io/nawis.github.io" style="text-decoration: none; ">Home </a>
+ 
+</div>
     </body>
 </html>
