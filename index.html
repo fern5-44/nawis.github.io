@@ -37,7 +37,7 @@
           color: Black;
         }
 /* Gruppen */
-	    .main {
+	   .main {
             padding: 16px;
             margin-top: 30px;
             height: 1500px; /* Used in this example to enable scrolling */
@@ -53,10 +53,10 @@
         }
 /* Links */		
         a {text-decoration: none;
-          color: Black;}
-          
-          
+          color: Black;
+          }
 /* NAVIGATION */
+/* navigationsbar */
 .navbar {
   overflow: hidden;
   background-color: #696969;
@@ -65,7 +65,6 @@
   top: 0;
   width: 100%;
 }
-
 .navbar a{
   float: left;
   display: bolck;
@@ -77,12 +76,25 @@
   font-family: Arial, Helvetica, sans-serif;
           font-size: 17px;
 }
-
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.navbar a.active {
+          background-color: #D3D3D3;
+          color: white;
+}
+/* menu */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
+.dropdown a:hover {
+  background-color: #ccc;
+}
+.dropdown a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 .dropdown .dropbtn {
   font-size: 17px;  
   border: none;
@@ -93,15 +105,6 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-}
-.navbar a.active {
-          background-color: #D3D3D3;
-          color: white;
-        }
-
 .dropdown-content {
   display: none;
   position: fixed;
@@ -110,19 +113,18 @@
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  height: 150%;
+  overflow-y: auto;
 }
-
 .dropdown-content .header {
   background: grey;
   padding: 16px;
   color: white;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* Create three equal columns that floats next to each other */
+/* Links in Menu */
 .column {
   float: none;
   width: 25%;
@@ -130,7 +132,6 @@
   background-color: #ccc;
   height: 250px;
 }
-
 .column a {
   float: none;
   color: black;
@@ -139,23 +140,15 @@
   display: block;
   text-align: left;
 }
-
 .column a:hover {
   background-color: #ddd;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-  .main {
-            padding: 16px;
-            margin-top: 30px;
-            height: 1500px; /* Used in this example to enable scrolling */
-          }
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -163,7 +156,6 @@
     height: auto;
   }
 }
-
 </style>
 </head>
 <body style="background-color:white;">
