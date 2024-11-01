@@ -42,8 +42,9 @@
           padding: 8px;
         }
 /* Links */		
-        a {color: Black;
+        a {
+          color: Black;
           font-family: courier;
-	  font-size: 100%;
+          font-size: 100%;
           }
 </style>
