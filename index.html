@@ -160,68 +160,9 @@
 </head>
 <body style="background-color:white;">
 
-<div class="navbar">
-  <a class="active" href="https://fern5-44.github.io/nawis.github.io/">Home</a>
-    <div class="dropdown">
-    <button class="dropbtn">Menu 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-         <div class="row">
-        <div class="column">
-          <h3>World-NOW</h3>
-          <a href="Sites/environment.html">Environment</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="column">
-          <h3>Life with Love</h3>
-          <a href="Sites/wedding.html">Wedding</a>
-          <a href="#">Friendship</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="column">
-          <h3>Nutrition</h3>
-          <a href="#">3 - Ingredients</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="column">
-          <h3>Others</h3>
-          <a href="Sites/katk.html">Kat. K</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-      </div>
-    </div>
-  </div> 
-  <a href="https://fern5-44.github.io/nawis.github.io/Inspiration">Inspiration</a>
-  <a href="https://fern5-44.github.io/nawis.github.io/reference">About</a>
-</div> 
-
-
-<!-- INHALT -->
-<div class="main">
-        <h1>Study tools</h1>
 	<!-- Platzhalter für die Navigation -->
   <div id="navbar"></div>
-        <p>Welcome to the Study Sites! Please take a look and give me feedback</p>
-        <h2>News</h2>
-        <p>Here you can see all the News! So be updated all days.</p>
-        <br></br>
-	<center><img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-News-Sheep.JPEG" height="600" width="500"/></center>
-	<p>Sheeps on the green autum gras. So cute. A little walk in the evening is the best thing you can do!</p>
-        <center><img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-News-GB1.JPEG" height="600" width="500"/></center>
-        <p>Autum started definitly. This picture was made in the Engadin. Such a beautiful View.</p>
-        
-
-<!-- Tabelle Event -->
-<h2>Events</h2>
-	<!-- In jeder HTML-Seite: -->
+		<!-- In jeder HTML-Seite: -->
 
 
   <!-- Script zum Laden der Navigationsleiste -->
@@ -230,7 +171,7 @@
     async function loadNavbar() {
       try {
         // Lade die navbar.html-Datei
-        const response = await fetch('tools/menu.html');
+        const response = await fetch('tools/navbar.html');
         // Überprüfe, ob die Datei erfolgreich geladen wurde
         if (response.ok) {
           const navbarContent = await response.text();
@@ -247,6 +188,24 @@
     // Beim Laden der Seite die Navigationsleiste einfügen
     loadNavbar();
   </script>
+
+
+<!-- INHALT -->
+<div class="main">
+        <h1>Study tools</h1>
+        <p>Welcome to the Study Sites! Please take a look and give me feedback</p>
+        <h2>News</h2>
+        <p>Here you can see all the News! So be updated all days.</p>
+        <br></br>
+	<center><img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-News-Sheep.JPEG" height="600" width="500"/></center>
+	<p>Sheeps on the green autum gras. So cute. A little walk in the evening is the best thing you can do!</p>
+        <center><img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-News-GB1.JPEG" height="600" width="500"/></center>
+        <p>Autum started definitly. This picture was made in the Engadin. Such a beautiful View.</p>
+        
+
+<!-- Tabelle Event -->
+<h2>Events</h2>
+
 
 <p>Here you can find the Events. Follow the link to register.</p>
 <center>
