@@ -219,6 +219,12 @@
 
 <!-- Tabelle Event -->
 <h2>Events</h2>
+	<!-- In jeder HTML-Seite: -->
+<div id="navbar"></div>
+<script>
+  document.getElementById("menu").innerHTML = fetch("https://fern5-44.github.io/nawis.github.io/tools/menu.html").then(response => response.text());
+</script>
+
 <p>Here you can find the Events. Follow the link to register.</p>
 <center>
   <table>
