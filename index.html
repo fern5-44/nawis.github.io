@@ -60,35 +60,8 @@
 </head>
 <body style="background-color:white;">
 
-	<!-- Platzhalter für die Navigation -->
+<!-- Navigationsbar -->
   <div id="navbar"></div>
-		<!-- In jeder HTML-Seite: -->
-
-
-  <!-- Script zum Laden der Navigationsleiste -->
-  <script>
-    // Funktion zum Laden der Navigationsleiste
-    async function loadNavbar() {
-      try {
-        // Lade die navbar.html-Datei
-        const response = await fetch('tools/navbar.html');
-        // Überprüfe, ob die Datei erfolgreich geladen wurde
-        if (response.ok) {
-          const navbarContent = await response.text();
-          // Setze den Inhalt des navbar-Divs auf den geladenen HTML-Code
-          document.getElementById('navbar').innerHTML = navbarContent;
-        } else {
-          console.error('Navbar konnte nicht geladen werden:', response.statusText);
-        }
-      } catch (error) {
-        console.error('Fehler beim Laden der Navbar:', error);
-      }
-    }
-
-    // Beim Laden der Seite die Navigationsleiste einfügen
-    loadNavbar();
-  </script>
-
 
 <!-- INHALT -->
 <div class="main">
@@ -150,6 +123,30 @@
  </table>
  </center>
     </div>
+<!-- SCRIPTS -->	
+  <!-- Script zum Laden der Navigationsleiste -->
+  <script>
+    // Funktion zum Laden der Navigationsleiste
+    async function loadNavbar() {
+      try {
+        // Lade die navbar.html-Datei
+        const response = await fetch('tools/navbar.html');
+        // Überprüfe, ob die Datei erfolgreich geladen wurde
+        if (response.ok) {
+          const navbarContent = await response.text();
+          // Setze den Inhalt des navbar-Divs auf den geladenen HTML-Code
+          document.getElementById('navbar').innerHTML = navbarContent;
+        } else {
+          console.error('Navbar konnte nicht geladen werden:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Fehler beim Laden der Navbar:', error);
+      }
+    }
+
+    // Beim Laden der Seite die Navigationsleiste einfügen
+    loadNavbar();
+  </script>
 
 </body>
 </html>
