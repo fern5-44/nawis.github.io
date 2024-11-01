@@ -3,20 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Einbindung des zentralen Stylesheets -->
-<link rel="stylesheet" href="https://fern5-44.github.io/nawis.github.io/tools/style-site.css">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Schrift */
+		body {margin:0;
+		font-family: courier;
+		}
+		h1 {
+          color: Black;
+          font-size: 800%;
+          text-align: center;
+        }
+        h2 {
+          color: Black;
+          font-size: 400%;
+          text-align: center;   
+        }
+		h3 {
+          color: Black;
+          font-size: 200%;
+          text-align: center;  
+        }
+        p  {
+          color: grey;
+          font-size: 100%;
+          text-align: center;
+        }
+		b {
+          color: Black;
+        }
+/* Gruppen */
+	   .main {
+            padding: 16px;
+            margin-top: 30px;
+            height: 1500px; /* Used in this example to enable scrolling */
+          }
+/* Tabellen */
+        table {
+          border-collapse: collapse;
+          width: 80%;
+        }
+        td, th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+        }
 /* Links */		
         a {text-decoration: none;
           color: Black;
           }
+
 </style>
 <!-- Navigationsbar -->
 <div id="navbar"></div>
 </head>
+
+	
 <body style="background-color:white;">
-
-
 <!-- INHALT -->
 <div class="main">
         <h1>Study tools</h1>
@@ -32,8 +77,6 @@
 
 <!-- Tabelle Event -->
 <h2>Events</h2>
-
-
 <p>Here you can find the Events :). Follow the link to register.</p>
 <center>
   <table>
@@ -71,13 +114,12 @@
     <td>07.08-10.08.2025</td>
     <td>Ferropolis Insel</td>
     <td><a href="https://macherfestival.io/">macherfestival.io</a><br><p>Kontakt:orga@macherfestival.io</p></td>
-  </tr>
-
-	  
+  </tr>	  
  </table>
  </center>
-    </div>
-<!-- SCRIPTS -->	
+</div>
+
+	<!-- SCRIPTS -->	
   <!-- Script zum Laden der Navigationsleiste -->
   <script>
     // Funktion zum Laden der Navigationsleiste
