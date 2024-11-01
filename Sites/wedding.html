@@ -29,37 +29,6 @@
 		b {
           color: Black;
         }
-/* Navigation */      
-        .navbar {
-          overflow: hidden;
-          background-color: #696969;
-          position: fixed;
-	  font-family: Arial, Helvetica, sans-serif;
-          top: 0;
-          width: 100%;
-        }
-		
-        .navbar a {
-          float: left;
-          display: bolck;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 10px 16px;
-          text-decoration: none;
-	  font-family: Arial, Helvetica, sans-serif;
-          font-size: 17px;
-        }
-        
-        .navbar a:hover {
-          background-color: #ddd;
-          color: black;
-	  font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .navbar a.active {
-          background-color: #D3D3D3;
-          color: white;
-        }
 /* Gruppen */
 		 .main {
             padding: 16px;
@@ -80,19 +49,14 @@
           color: Black;}
 </style>
 
-     
-    <head> 
-<!-- Navigationsbar -->
-              <div class="navbar">
-              <a href="https://fern5-44.github.io/nawis.github.io/">Home</a>
-              <a href="https://fern5-44.github.io/nawis.github.io/menu">Menu</a>
-              <a href="https://fern5-44.github.io/nawis.github.io/Inspiration">Inspiration</a>
-              <a href="https://fern5-44.github.io/nawis.github.io/reference">About</a>
-        </div>
-              
-    </head> 
+<head> 
+<body style="background-color:white;">
+<!-- Navbar -->	
+<div id="navbar"></div>
+
+</head> 
   
-    <body> 
+<body> 
 <!-- Inhalt -->
 <div class="main">
         <br>
@@ -166,5 +130,29 @@
 </html>
 </div>
 
+<!-- SCRIPTS -->	
+  <!-- Script zum Laden der Navigationsleiste -->
+  <script>
+    // Funktion zum Laden der Navigationsleiste
+    async function loadNavbar() {
+      try {
+        // Lade die navbar.html-Datei
+        const response = await fetch('https://fern5-44.github.io/nawis.github.io/tools/navbar.html');
+        // Überprüfe, ob die Datei erfolgreich geladen wurde
+        if (response.ok) {
+          const navbarContent = await response.text();
+          // Setze den Inhalt des navbar-Divs auf den geladenen HTML-Code
+          document.getElementById('navbar').innerHTML = navbarContent;
+        } else {
+          console.error('Navbar konnte nicht geladen werden:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Fehler beim Laden der Navbar:', error);
+      }
+    }
+
+    // Beim Laden der Seite die Navigationsleiste einfügen
+    loadNavbar();
+  </script>
 </body>
 </html>
