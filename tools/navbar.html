@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,10 @@
 		body {margin:0;
 		font-family: courier;
 		}
-
+		h4 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
 /* NAVIGATION */
 /* navigationsbar */
 .navbar {
@@ -86,21 +90,21 @@
 /* Links in Menu */
 .column {
   float: none;
-  width: 25%;
+  width: auto; /* Grösse von Menü */
   padding: 10px;
-  background-color: #ccc;
-  height: 250px;
+  background-color: #ccc; /* hintergrund - beim aufklappen */
+  height: auto;
 }
 .column a {
   float: none;
-  color: black;
-  padding: 16px;
+  color: black; /* unterthemen */
+  padding: 11px;
   text-decoration: none;
-  display: block;
+  /* display: block; - anordnung: untereinander */
   text-align: left;
 }
 .column a:hover {
-  background-color: #ddd;
+  background-color: #ddd; /* beim rüberfahren */
 }
 /* Clear floats after the columns */
 .row:after {
@@ -128,25 +132,25 @@
     <div class="dropdown-content">
          <div class="row">
         <div class="column">
-          <h3>World-NOW</h3>
+          <h4>World-NOW</h4>
           <a href="https://fern5-44.github.io/nawis.github.io/Sites/environment.html">Environment</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
         <div class="column">
-          <h3>Life with Love</h3>
+          <h4>Life with Love</h4>
           <a href="https://fern5-44.github.io/nawis.github.io/Sites/wedding.html">Wedding</a>
           <a href="#">Friendship</a>
           <a href="#">Link 3</a>
         </div>
         <div class="column">
-          <h3>Nutrition</h3>
+          <h4>Nutrition</h4>
           <a href="#">3 - Ingredients</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
         <div class="column">
-          <h3>Others</h3>
+          <h4>Others</h4>
           <a href="https://fern5-44.github.io/nawis.github.io/Sites/katk.html">Kat. K</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
