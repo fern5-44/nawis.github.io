@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Einbindung des zentralen Stylesheets -->
+<link rel="stylesheet" href="https://fern5-44.github.io/nawis.github.io/tools/style-site.css">
+	
+<!-- NAVBAR -->
+<div id="navbar"></div>
+</head>
+	
+<body style="background-color:white;">
+<!-- Inhalt -->
+<div class="main">
+        <br>
+          <b>World-NOW: environment</b>
+        <p>Description of the thema. The same as in Menu but a bit exactlier.
+        m blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+          obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+          tenetur error, harum nesciunt ipsum debitis quas aliquid. Reeeeeeeeeeprehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi exped it works</p>
+        <br>
+        <h2>Overview</h2>
+        <table>
+            <tr>
+              <th>Land</th>
+              <th>Wasserverbrauch</th>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>Camp over the holidays.</td>
+              <td>12.12.2025-15.12.2025</td>
+              <td>Basel Messhalle</td>
+              <td><a href="https://www.google.com/">google.com</a></td>
+            </tr>
+            <tr>
+              <td>two</td>
+              <td>Concert in Switzerland.</td>
+              <td>01.01.2026</td>
+              <td>Basel Messhalle</td>
+              <td><a href="https://www.google.com/">google.com</a></td>
+            </tr>
+           </table>
+        <br>
+        <h2>What says the others?</h2>
+        <p>So wie im <a href="#Buch S.8 Abschnitt 3">Zitat</a> angegeben, sehen wir das genauso.  m blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+          obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+          tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi expe  m blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+          obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+          tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi expe <br> <br> m blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+          obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+          tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi expe <a href="#Artiklel: WEB-Design">Ingrid</a> ehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi expe <br>  m blanditiis harum quisqu </p>
+        <br>
+        <h2>What can we do now?</h2>
+        <p>  iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+          tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi expe <br>  m blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+          obcaecati tenetur iure eius ea iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+          tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,ia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+          sapiente officiis modi at sunt excepturi expe <br>  m blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+          obcaecati tenetur iure eius ea</p>
+        <br>
+        <br>
+        <h2>References</h2>
+        <details>
+        <summary id="Buch S.8 Abschnitt 3">Buch</summary>
+        <p>Zitat von Lorek Buchmeier: Nur wer das Ziel kennt, findet das Ziel.</p>
+        </details>
+          <details> 
+          <summary id="Artiklel: WEB-Design">Artikel Web</summary>
+          <p>Der frühe Vogel fängt den Wurm</p>   
+          </details>
+
+</div>
+
+<!-- SCRIPTS -->	
+  <!-- Script zum Laden der Navigationsleiste -->
+  <script>
+    // Funktion zum Laden der Navigationsleiste
+    async function loadNavbar() {
+      try {
+        // Lade die navbar.html-Datei
+        const response = await fetch('https://fern5-44.github.io/nawis.github.io/tools/navbar.html');
+        // Überprüfe, ob die Datei erfolgreich geladen wurde
+        if (response.ok) {
+          const navbarContent = await response.text();
+          // Setze den Inhalt des navbar-Divs auf den geladenen HTML-Code
+          document.getElementById('navbar').innerHTML = navbarContent;
+        } else {
+          console.error('Navbar konnte nicht geladen werden:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Fehler beim Laden der Navbar:', error);
+      }
+    }
+
+    // Beim Laden der Seite die Navigationsleiste einfügen
+    loadNavbar();
+  </script>
+
+</body>
+</html>
+
