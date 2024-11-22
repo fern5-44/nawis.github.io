@@ -7,6 +7,50 @@
   box-sizing: border-box;
 }
 
+/* Schrift */
+		body {margin:0;
+		font-family: courier;
+		}
+		h1 {
+          color: Black;
+          font-size: 800%;
+        }
+        h2 {
+          color: Black;
+          font-size: 400%;
+         }
+		h3 {
+          color: Black;
+          font-size: 200%;
+        }
+        p  {
+          color: grey;
+          font-size: 100%;
+        }
+		b {
+          color: Black;
+        }
+/* Gruppen */
+	   .main {
+            padding: 16px;
+            margin-top: 30px;
+            height: 1500px; /* Used in this example to enable scrolling */
+          }
+/* Tabellen */
+        table {
+          border-collapse: collapse;
+          width: 80%;
+        }
+        td, th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+        }
+/* Links */		
+        a {text-decoration: none;
+          color: Black;
+          font-family: courier;
+          font-size: 200%;}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -14,7 +58,13 @@ input[type=text], select, textarea {
   border-radius: 4px;
   resize: vertical;
 }
-
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
@@ -70,36 +120,36 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>Responsive Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<h2>Contact ME :)</h2>
+<p>Do you have any question or feedback? No problem! Fill in the Formular und click "Submit". I will answer you per email. <br> When you have ideas, that i maybe can implement, pleas conatct me. I am open for new things. </p>
 
 <div class="container">
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname">Your Name</label>
+        <label for="fname">Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="name" name="name" placeholder="Your name.."required>
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Your Email</label>
+        <label for="lname">Email</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="email" id="email" name="email" placeholder="Your email.."required>
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="country">Country</label>
+        <label for="country">Issue</label>
       </div>
       <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+        <select id="issue" name="issue">
+          <option value="question">Question</option>
+          <option value="feedback">Feedback</option>
+          <option value="Ideas">Ideas</option>
         </select>
       </div>
     </div>
