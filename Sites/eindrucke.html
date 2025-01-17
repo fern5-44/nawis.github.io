@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,46 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Einbindung des zentralen Stylesheets -->
 <link rel="stylesheet" href="https://fern5-44.github.io/nawis.github.io/tools/style-site.css">
-	
-<!-- NAVBAR -->
-<div id="navbar"></div>
 </head>
 	
 <body style="background-color:white;">
+<!-- Container für die Navigationsleiste -->
+  <div id="navbar-container"></div>
 <!-- Inhalt -->
 <div class="main">
         <br>
-          <b>Krimskrams: Eindrücke</b><br>
-	  <h3>Zweifel der Existent Gottes</h3>
+	  <h2>Wo ist Gott?</h2>
 	  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Bild-WH.png" height="450" width="600"/>
 	  <p>Hinterfrage die Existenz von Gott nicht, nur weil du ihn gerade nicht siehst. Verdecken Wolken die Sternen am Himmel, sind sie zwar für uns nicht sichtbar aber sehr wohl existent. <br> Die Wolken stellen in der Abbildung unsere Sünden dar. Mit dem Heileigen Geist, der als Wind dargestellt wird, können wir wieder in Gottes Gegenwart tretten.<br> ME, 29.06.2023 </p>
-		
+	<br><br>
+	<h2>Berufung / Gaben</h2>
+	<img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Bild-BG.png" height="450" width="500"/>
+	<p>Zeichen das Bild auf und beantworte die Fragen dazu.<br> Adonia,04.2023 </p>
 </div>
 
-<!-- SCRIPTS -->	
-  <!-- Script zum Laden der Navigationsleiste -->
-  <script>
-    // Funktion zum Laden der Navigationsleiste
-    async function loadNavbar() {
-      try {
-        // Lade die navbar.html-Datei
-        const response = await fetch('https://fern5-44.github.io/nawis.github.io/tools/navbar.html');
-        // Überprüfe, ob die Datei erfolgreich geladen wurde
-        if (response.ok) {
-          const navbarContent = await response.text();
-          // Setze den Inhalt des navbar-Divs auf den geladenen HTML-Code
-          document.getElementById('navbar').innerHTML = navbarContent;
-        } else {
-          console.error('Navbar konnte nicht geladen werden:', response.statusText);
-        }
-      } catch (error) {
-        console.error('Fehler beim Laden der Navbar:', error);
-      }
-    }
-
-    // Beim Laden der Seite die Navigationsleiste einfügen
-    loadNavbar();
-  </script>
+   <!-- JavaScript für die Navbar -->
+  <script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
 
 </body>
 </html>

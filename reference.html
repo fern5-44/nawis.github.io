@@ -4,214 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: courier; background-color: white; }
+  h1, h2, h3, p, b { color: black; text-align: center; }
+  h1 { font-size: 800%; }
+  h2 { font-size: 400%; }
+  h3 { font-size: 200%; }
+  p { color: grey; font-size: 100%; }
+  a { text-decoration: none; color: black; font-size: 200%; }
 
-/* Schrift */
-		body {margin:0;
-		font-family: courier;
-		}
-		h1 {
-          color: Black;
-          font-size: 800%;
-	text-align: center;
-        }
-        h2 {
-          color: Black;
-          font-size: 400%;
-	text-align: center;
-         }
-		h3 {
-          color: Black;
-          font-size: 200%;
-	text-align: center;
-        }
-        p  {
-          color: grey;
-          font-size: 100%;
-	text-align: center;
-        }
-		b {
-          color: Black;
-	text-align: center;
-        }
+  table { border-collapse: collapse; width: 80%; }
+  td, th { border: 1px solid #ddd; padding: 8px; }
 
-/* Tabellen */
-        table {
-          border-collapse: collapse;
-          width: 80%;
-        }
-        td, th {
-          border: 1px solid #dddddd;
-          padding: 8px;
-        }
-/* Links */		
-        a {text-decoration: none;
-          color: Black;
-          font-family: courier;
-          font-size: 200%;}
-/* Gruppen */
-	   .main {
-            padding: 16px;
-            margin-top: 30px;
-            height: 1500px; /* Used in this example to enable scrolling */
-          }
-		  
-		  
-		  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
+  .main { padding: 16px; margin-top: 30px; height: 1500px; }
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] { width: 100%; margin-top: 0; }
   }
-}
-	
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
 
-input[type=submit] {
-  background-color: grey;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
+  input[type=text], input[type=email], select, textarea {
+    width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;
+  }
 
-input[type=submit]:hover {
-  background-color: #339933;
-}
+  input[type=submit] {
+    background-color: grey; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; float: right;
+  }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+  input[type=submit]:hover { background-color: #339933; }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
+  .container { border-radius: 5px; background-color: #f2f2f2; padding: 20px; }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
+  .col-25 { float: left; width: 25%; margin-top: 6px; }
+  .col-75 { float: left; width: 75%; margin-top: 6px; }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .row:after { content: ""; display: table; clear: both; }
 </style>
-	
-<!-- Navigationsbar -->
-<div id="navbar"></div>
 </head>
 
-	
-<body style="background-color:white;">
-<!-- INHALT -->
-<div class="main">
-        <h2>About</h2>
-        <p>My Name is fern5-44. I wanna share my toughts and ideas to others. i like to do this stuff.</p>
-	<h2>Contact ME :)</h2>
-<p>Do you have any question or feedback? No problem! Fill in the Formular und click Submit. I will answer you per email. <br> When you have ideas, that i maybe can implement, you can also write me. I am open for new things. </p>
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
 
-<div class="container">
-  <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name.."required>
-      </div>
+  <!-- Main Content -->
+  <div class="main">
+    <h2>About</h2>
+    <p>My Name is fern5-44. I want to share my thoughts and ideas with others. I enjoy doing this stuff.</p>
+    <h2>Contact ME :)</h2>
+    <p>Do you have any questions or feedback? Fill out the form and click Submit. I will respond via email. Feel free to share ideas that I might implement. I am open to new things.</p>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="email" name="email" placeholder="Your email..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="issue">Issue</label>
+          </div>
+          <div class="col-75">
+            <select id="issue" name="issue">
+              <option value="question">Question</option>
+              <option value="feedback">Feedback</option>
+              <option value="ideas">Ideas</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Email</label>
-      </div>
-      <div class="col-75">
-        <input type="email" id="email" name="email" placeholder="Your email.."required>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">Issue</label>
-      </div>
-      <div class="col-75">
-        <select id="issue" name="issue">
-          <option value="question">Question</option>
-          <option value="feedback">Feedback</option>
-          <option value="Ideas">Ideas</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Subject</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>
-<p>Thank's a lot <3</p>	 
-        
+    <p>Thank you so much! <3</p>
+  </div>
 
-
-</div>
-
-	<!-- SCRIPTS -->	
-  <!-- Script zum Laden der Navigationsleiste -->
-  <script>
-    // Funktion zum Laden der Navigationsleiste
-    async function loadNavbar() {
-      try {
-        // Lade die navbar.html-Datei
-        const response = await fetch('tools/navbar.html');
-        // Überprüfe, ob die Datei erfolgreich geladen wurde
-        if (response.ok) {
-          const navbarContent = await response.text();
-          // Setze den Inhalt des navbar-Divs auf den geladenen HTML-Code
-          document.getElementById('navbar').innerHTML = navbarContent;
-        } else {
-          console.error('Navbar konnte nicht geladen werden:', response.statusText);
-        }
-      } catch (error) {
-        console.error('Fehler beim Laden der Navbar:', error);
-      }
-    }
-
-    // Beim Laden der Seite die Navigationsleiste einfügen
-    loadNavbar();
-  </script>
-
+  <!-- JavaScript für die Navbar -->
+  <script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
 </body>
 </html>
