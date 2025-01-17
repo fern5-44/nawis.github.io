@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://fern5-44.github.io/nawis.github.io/tool/navbar.html")
+  fetch("https://fern5-44.github.io/nawis.github.io/tools/navbar.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar-container").innerHTML = data;
