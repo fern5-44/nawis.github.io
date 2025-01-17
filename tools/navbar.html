@@ -20,6 +20,64 @@
         }
 
 /* NAVIGATION */
+.sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #696969;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background-color: white;
+      color: grey;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+.topnav {
+      overflow: hidden;
+      background-color: #696969;
+       position: fixed; /* Fixiert die Navigationsleiste */
+      top: 0; /* Fixiert sie oben am Bildschirm */
+      width: 100%; /* Volle Breite */
+    }
+        
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    .topnav a:hover {
+      background-color: grey;
+      color: white;
+    }
+    
+   
+
 /* navigationsbar - style */
 .navbar {
   overflow: hidden;
@@ -47,127 +105,79 @@
           background-color: #D3D3D3;
           color: white;
 }
-/* menu */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.dropdown a:hover {
-  background-color: #ccc;
-}
-.dropdown a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.dropdown .dropbtn {
-  font-size: 17px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10px 16px;
-  background-color: inherit;
-  font-family:  Helvetica;
-  margin: 0;
-}
-.dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  height: 150%;
-  overflow-y: auto;
-}
-.dropdown-content .header {
-  background: grey;
-  padding: 16px;
-  color: white;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* Links in Menu */
-.column {
-  float: none;
-  width: auto; /* Grösse von Menü */
-  padding: 10px;
-  background-color: #ccc; /* hintergrund - beim aufklappen */
-  height: auto;
-}
-.column a {
-  float: none;
-  color: black; /* unterthemen */
-  padding: 11px;
-  text-decoration: none;
-  /* display: block; - anordnung: untereinander */
-  text-align: left;
-}
-.column a:hover {
-  background-color: #ddd; /* beim rüberfahren */
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: auto;
-    height: auto;
-  }
+
+   @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
 }
 </style>
 <title>Study Tool</title>
 </head>
-<body style="background-color:white;">
+<body>
 
-<div class="navbar">
-  <a href="https://fern5-44.github.io/nawis.github.io/">Home</a>
-    <div class="dropdown">
-    <button class="dropbtn">Menu 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-         <div class="row">
-        <div class="column">
-          <h4>Literatur</h4>
-          <a href="https://fern5-44.github.io/nawis.github.io/Sites/environment.html">Songs</a>
-	  <a href="https://fern5-44.github.io/nawis.github.io/Sites/demut.html">Inputs</a>
-	  <a href="https://fern5-44.github.io/nawis.github.io/Sites/demut.html">Gedichte</a>
-	  <a href="https://fern5-44.github.io/nawis.github.io/Sites/eindrucke.html">Bilder</a>
-        </div>
-        <div class="column">
-          <h4>Beziehungen</h4>
-          <a href="https://fern5-44.github.io/nawis.github.io/Sites/wedding.html">Ehe & !Ehe</a>
-          <a href="#">Freundschaften</a>
-        </div>
-        <div class="column">
-          <h4>Themen</h4>
-          <a href="https://fern5-44.github.io/nawis.github.io/Sites/katk.html">Kirche</a>
-        </div>
-        <div class="column">
-          <h4>Krimskrams</h4>
-          <a href="https://fern5-44.github.io/nawis.github.io/Sites/eindrucke.html">Eindrücke</a>
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
-      </div>
-    </div>
-  </div> 
-  <a href="https://fern5-44.github.io/nawis.github.io/Inspiration">Inspiration</a>
-  <a href="https://fern5-44.github.io/nawis.github.io/reference">About</a>
-</div> 
+<!-- Sidenav I -->
+<div id="SideONE" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/eindrucke.html">Songs</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/inputs.html">Inputs</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/eindrucke.html">Gedichte</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/eindrucke.html">Eindrücke</a>
+</div>
 
+<!-- Sidenav -->
+<div id="SideTWO" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavtwo()">&times;</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/ehe.html">Ehe & !Ehe</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/friends.html">Freundschaften</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/church.html">Kirche</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Sites/umwelt.html">Umwelt</a>
+</div>
+
+<!-- Top Navigation Bar -->
+<div class="topnav">
+  <a href="https://fern5-44.github.io/nawis.github.io">Home</a>
+  <a href="javascript:void(0)" style="font-size:25px;cursor:pointer" onclick="openNav()">Literatur</a>
+  <a href="javascript:void(0)" style="font-size:25px;cursor:pointer" onclick="openNavtwo()">Themen</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/Inspiration.html">Inspiration</a>
+  <a href="https://fern5-44.github.io/nawis.github.io/reference.html">Kontakt</a>
+</div>
+
+<!-- Main content area -->
+<div id="main">
+  <!-- Optional main content goes heref -->
+</div>
   
- </table>
- </center>
-    </div>
+  
+<!-- Scripts to control side navigation -->
+<script>
+  // Funktion zum Öffnen der Seitenleiste
+  function openNav() {
+    document.getElementById("SideONE").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+    function openNavtwo() {
+    document.getElementById("SideTWO").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
 
+  // Funktion zum Schließen der Seitenleiste
+  function closeNav() {
+    document.getElementById("SideONE").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+  
+    function closeNavtwo() {
+    document.getElementById("SideTWO").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
+  
 </body>
+
+
 </html>
