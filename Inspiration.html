@@ -15,6 +15,30 @@
   .main { padding: 16px; margin-top: 30px; height: 1500px; }
   table { border-collapse: collapse; width: 80%; }
   td, th { border: 1px solid #ddd; padding: 8px; }
+  details {
+      background-color: #e1e1d0;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2em; /* Größere Schrift */
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      font-size: 1.4em; /* Noch größere Schrift für Überschrift */
+      margin-bottom: 10px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::marker {
+      display: none;
+    }
 </style>
 	
 <div id="navbar-container"></div>
@@ -54,19 +78,29 @@
       <li>Badesalz</li>
     </ul>
   </details>
-  <h2>Recipes</h2>
-  <h3>Mango Chia Pudding</h3>
-  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Mango.JPEG" height="150" width="200"/>
-  <h3>Zimtschnecken</h3>
-  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Zimt.JPEG" height="300" width="150"/>
-  <p>Easy to make. A dream to eat.</p>
-  <h2>Music</h2>
-  <h3>Song of the week</h3>
-  <a href="https://open.spotify.com/intl-de/track/65iMcolmjYH41eqtGsqfsF?si=e2cba31ba10140d7">Mittelpunkt</a>
-  <p>Cool worship song.</p>
-  <h3>Gitarrenständer</h3>
-  <p>Die Gitarre immer griffbereit. Mit einer stabilen Kartonschachtel kannst du leicht eine Haltung für deine Gitarre bauen.</p>
-  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Gitarrenstander.JPEG" height="300" width="200"/>
+	
+   <details>
+    <summary>Recipes</summary>
+    	<h3>Mango Chia Pudding</h3>
+  	<img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Mango.JPEG" height="150" width="200"/>
+ 	<h3>Zimtschnecken</h3>
+  	<img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Zimt.JPEG" height="300" width="150"/>
+  	<p>Easy to make. A dream to eat.</p>
+  </details>
+
+  <details>
+    <summary>Music</summary>
+	  <h3>Song of the week</h3>
+	  <a href="https://open.spotify.com/intl-de/track/65iMcolmjYH41eqtGsqfsF?si=e2cba31ba10140d7">Mittelpunkt</a>
+	  <p>Cool worship song.</p>
+	  <h3>Gitarrenständer</h3>
+	  <p>Die Gitarre immer griffbereit. Mit einer stabilen Kartonschachtel kannst du leicht eine Haltung für deine Gitarre bauen.</p>
+	  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Gitarrenstander.JPEG" height="300" width="200"/>  </details>
+ <details>
+    <summary>Großer Abschnitt 3</summary>
+    <p>Dies ist der Inhalt von Abschnitt 3. Du kannst beliebig viel Text hier unterbringen.</p>
+  </details>
+	
   <h2>Questions or Feedback?</h2>
   <a href="https://fern5-44.github.io/nawis.github.io/reference.html">Contact ME -> Here</a>
 </div>
