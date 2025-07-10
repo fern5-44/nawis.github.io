@@ -15,29 +15,29 @@
   .main { padding: 16px; margin-top: 30px; height: 1500px; }
   table { border-collapse: collapse; width: 80%; }
   td, th { border: 1px solid #ddd; padding: 8px; }
-  details {
-      background-color: #e1e1d0;
+ details {
       padding: 20px;
       margin-bottom: 20px;
-      border: none;
-      border-radius: 10px;
-      font-size: 1.2em; /* Größere Schrift */
+      border-radius: 12px;
+      font-size: 2em;
+      color: #333;
+      border: 1px solid #ccc;
+      transition: background-color 0.3s ease;
+    }
+
+    details:nth-of-type(odd) {
+      background-color: #F5F5F5; /* Light neutral */
+    }
+
+    details:nth-of-type(even) {
+      background-color: #C9D8A4; /* Brighter olive green */
     }
 
     summary {
       font-weight: bold;
       cursor: pointer;
+      outline: none;
       list-style: none;
-      font-size: 2em; /* Noch größere Schrift für Überschrift */
-      margin-bottom: 10px;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::marker {
-      display: none;
     }
 </style>
 	
@@ -46,13 +46,20 @@
 <body>
 <div class="main">
   <h2>Creative Things</h2>
-  <h3>Ermutigungskärtchen gestalten</h3>
+<details>
+    <summary>Karten</summary>
+    	<h3>Ermutigungskärtchen gestalten</h3>
   <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-karten.JPEG" height="300" width="400"/>
-  <h3>Kerzen giessen</h3>
+
+  </details>
+
+ <details>
+    <summary>Kerzen</summary>
+    	<h3>Kerzen giessen</h3>
   <p>Düfte: Honig, Lavendel, Vanille, Zimt, ...</p>
   <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Kerzen-giessen.JPEG" height="300" width="400"/>
-  <h3>Kerzen bemalen</h3>
-
+  <h3>Kerzen verzieren</h3>
+  </details>
 	 <details>
     <summary>Adventskalender</summary>
 	    <h3>Do it YOURSELF</h3>
@@ -100,9 +107,10 @@
     <p>Dies ist der Inhalt von Abschnitt 3. Du kannst beliebig viel Text hier unterbringen.</p>
   </details>
 	
-  <h2>Questions or Feedback?</h2>
+  <h3>Questions or Feedback?</h3>
   <a href="https://fern5-44.github.io/nawis.github.io/reference.html">Contact ME -> Here</a>
 </div>
 <script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
 </body>
 </html>
+
