@@ -15,30 +15,39 @@
   .main { padding: 16px; margin-top: 30px; height: 1500px; }
   table { border-collapse: collapse; width: 80%; }
   td, th { border: 1px solid #ddd; padding: 8px; }
- details {
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      font-size: 2em;
-      color: #333;
-      border: 1px solid #ccc;
-      transition: background-color 0.3s ease;
-    }
+details {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  font-size: 1em; /* base font size for inside content */
+  color: #333;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
 
-    details:nth-of-type(odd) {
-      background-color: #F5F5F5; /* Light neutral */
-    }
+/* Make only the summary (title) larger */
+details > summary {
+  font-weight: bold;
+  font-size: 3em; /* bigger title */
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+}
 
-    details:nth-of-type(even) {
-      background-color: #C9D8A4; /* Brighter olive green */
-    }
+/* Optional: Remove arrow */
+summary::-webkit-details-marker,
+summary::marker {
+  display: none;
+}
 
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      list-style: none;
-    }
+/* Alternate background colors */
+details:nth-of-type(odd) {
+  background-color: #F5F5F5;
+}
+
+details:nth-of-type(even) {
+  background-color: #C9D8A4;
+}
 </style>
 	
 <div id="navbar-container"></div>
