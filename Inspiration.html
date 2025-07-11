@@ -1,121 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: courier; background-color: white; }
-  h1 { color: black; font-size: 800%; }
-  h2 { color: black; font-size: 400%; }
-  h3 { color: black; font-size: 200%; }
-  p { color: grey; font-size: 100%; }
-  b, a { color: black; font-family: courier; }
-  a { text-decoration: none; font-size: 200%; }
-  .main { padding: 16px; margin-top: 30px; height: 1500px; }
-  table { border-collapse: collapse; width: 80%; }
-  td, th { border: 1px solid #ddd; padding: 8px; }
-details {
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  font-size: 1em; /* base font size for inside content */
-  color: #333;
-  border: 1px solid #ccc;
-  transition: background-color 0.3s ease;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-/* Make only the summary (title) larger */
-details > summary {
-  font-weight: bold;
-  font-size: 250%; /* bigger title */
-  cursor: pointer;
-  outline: none;
-  list-style: none;
-}
+    body {margin: 0; font-family: courier;background-color: white;}
+    h1 {font-size: clamp(2.5rem, 10vw, 8rem);}
+    h2 {font-size: clamp(2rem, 6vw, 4rem);}
+    h3 {font-size: clamp(1.2rem, 4vw, 2rem);}
+    p, li, a {font-size: clamp(1rem, 2.5vw, 1.2rem);}
 
-/* Optional: Remove arrow */
-summary::-webkit-details-marker,
-summary::marker {
-  display: none;
-}
+  
+    .main {
+      padding: 16px;
+      margin-top: 30px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-/* Alternate background colors */
-details:nth-of-type(odd) {
-  background-color: #f4f5f2;
-}
+    table {border-collapse: collapse; width: 80%;}
+    td, th {border: 1px solid #ddd; padding: 8px;}
 
-details:nth-of-type(even) {
-  background-color: #e3ead9;
-}
-</style>
-	
-<div id="navbar-container"></div>
+    details {
+      margin: 30px 0;
+      padding: 25px 30px;
+      border-radius: 24px;
+      font-size: 1em;
+      color: #333;
+      border: 1px solid #cfd4c5; /* heller Rahmen hinzugefügt */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    details > summary {
+      font-weight: bold;
+      font-size: 250%;
+      cursor: pointer;
+      outline: none;
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    summary::-webkit-details-marker,
+    summary::marker {
+      display: none;
+    }
+
+    details:nth-of-type(odd) {background-color: #f4f5f2;}
+    details:nth-of-type(even) {background-color: #e3ead9;}
+    img {border-radius: 12px; margin: 10px 0; max-width: 100%; height: auto;}
+    ul {font-size: 1em;}
+  </style>
 </head>
+
 <body>
-<div class="main">
-  <h2>Creative Things</h2>
-<details>
-    <summary>Cards</summary>
-    	<h3>Ermutigungskärtchen gestalten</h3>
-  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-karten.JPEG" height="300" width="400"/>
+  <div id="navbar-container"></div>
 
-  </details>
+  <div class="main">
+    <h2>Creative Things</h2>
 
- <details>
-    <summary>Candles</summary>
-    	<h3>Kerzen giessen</h3>
-  <p>Düfte: Honig, Lavendel, Vanille, Zimt, ...</p>
-  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Kerzen-giessen.JPEG" height="300" width="400"/>
-  <h3>Kerzen verzieren</h3>
-  </details>
-	 <details>
-    <summary>Adventskalender</summary>
-	    <h3>Do it YOURSELF</h3>
-	    <ul>
-	      <li>Kerzen giessen: schaue in der Inspiration :)</li>
-	      <li>Versteckte Botschaft in Teelicht</li>
-	      <li>Karten zeichnen: schaue in der Inspiration :)</li>
-	      <li>Pralinen selber machen</li>
-	      <li>Kaffee-Peeling</li>
-	      <li>Erinnerungsleporello</li>
-	      <li>Bruchschokolade</li>
-	      <li>Kerzen bemalen: schaue in der Inspiration :)</li>
-	    </ul>
+    <details>
+      <summary>Cards</summary>
+      <h3>Ermutigungskärtchen gestalten</h3>
+      <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-karten.JPEG" />
+    </details>
 
-	    <h3>Einkaufsliste</h3>
-	    <ul>
-	      <li>Servietten</li>
-	      <li>Tee</li>
-	      <li>Washitape</li>
-	      <li>Pralinen</li>
-	      <li>Seife</li>
-	      <li>Getrocknete Früchte</li>
-	      <li>Badesalz</li>
-	    </ul>
-  </details>
-   <details>
-    <summary>Recipes</summary>
-    	<h3>Mango Chia Pudding</h3>
-  	<img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Mango.JPEG" height="150" width="200"/>
- 	<h3>Zimtschnecken</h3>
-  	<img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Zimt.JPEG" height="300" width="150"/>
-  	<p>Easy to make. A dream to eat.</p>
-  </details>
+    <details>
+      <summary>Candles</summary>
+      <h3>Kerzen giessen</h3>
+      <p>Düfte: Honig, Lavendel, Vanille, Zimt, ...</p>
+      <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Kerzen-giessen.JPEG" />
+      <h3>Kerzen verzieren</h3>
+    </details>
 
-  <details>
-    <summary>Music</summary>
-	  <h3>Song of the week</h3>
-	  <a href="https://open.spotify.com/intl-de/track/65iMcolmjYH41eqtGsqfsF?si=e2cba31ba10140d7">Mittelpunkt</a>
-	  <p>Cool worship song.</p>
-	  <h3>Gitarrenständer</h3>
-	  <p>Die Gitarre immer griffbereit. Mit einer stabilen Kartonschachtel kannst du leicht eine Haltung für deine Gitarre bauen.</p>
-	  <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Gitarrenstander.JPEG" height="300" width="200"/>  </details>
- <details>
-    <summary>Embroider</summary>
-    <p>Dies ist der Inhalt von Abschnitt 3. Du kannst beliebig viel Text hier unterbringen.</p>
-  </details>
-</div>
-<script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
+    <details>
+      <summary>Adventskalender</summary>
+      <h3>Do it YOURSELF</h3>
+      <ul>
+        <li>Kerzen giessen: schaue in der Inspiration :)</li>
+        <li>Versteckte Botschaft in Teelicht</li>
+        <li>Karten zeichnen: schaue in der Inspiration :)</li>
+        <li>Pralinen selber machen</li>
+        <li>Kaffee-Peeling</li>
+        <li>Erinnerungsleporello</li>
+        <li>Bruchschokolade</li>
+        <li>Kerzen bemalen: schaue in der Inspiration :)</li>
+      </ul>
+
+      <h3>Einkaufsliste</h3>
+      <ul>
+        <li>Servietten</li>
+        <li>Tee</li>
+        <li>Washitape</li>
+        <li>Pralinen</li>
+        <li>Seife</li>
+        <li>Getrocknete Früchte</li>
+        <li>Badesalz</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Recipes</summary>
+      <h3>Mango Chia Pudding</h3>
+      <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Mango.JPEG" />
+      <h3>Zimtschnecken</h3>
+      <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Zimt.JPEG" />
+      <p>Easy to make. A dream to eat.</p>
+    </details>
+
+    <details>
+      <summary>Music</summary>
+      <h3>Song of the week</h3>
+      <a href="https://open.spotify.com/intl-de/track/65iMcolmjYH41eqtGsqfsF?si=e2cba31ba10140d7">Mittelpunkt</a>
+      <p>Cool worship song.</p>
+      <h3>Gitarrenständer</h3>
+      <p>Die Gitarre immer griffbereit. Mit einer stabilen Kartonschachtel kannst du leicht eine Haltung für deine Gitarre bauen.</p>
+      <img src="https://fern5-44.github.io/nawis.github.io/PIC/IMG-Gitarrenstander.JPEG" />
+    </details>
+
+    <details>
+      <summary>Embroider</summary>
+      <p>Dies ist der Inhalt von Abschnitt 3. Du kannst beliebig viel Text hier unterbringen.</p>
+    </details>
+  </div>
+
+  <script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
 </body>
 </html>
