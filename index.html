@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p><!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -17,6 +25,42 @@
   td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
   a { text-decoration: none; color: black; }
   a:hover { text-decoration: underline; }
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .event-card {
+    background: #f4f5f2;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  .event-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #222;
+  }
+  .event-card p {
+    font-size: 1rem;
+    margin: 0.5em 0;
+  }
+  .event-card a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  .event-card a:hover {
+    text-decoration: underline;
+  }
 </style>
 </head>
  
@@ -38,47 +82,42 @@
       <p>Autumn started definitively. This picture was taken in the Engadin. Such a beautiful view.</p>
     </center>
     <h2>Events</h2>
-    <p>Here you can find the Events :). Follow the link to register.</p>
-    <center>
-      <table>
-        <tr>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Date</th>
-          <th>Location</th>
-          <th>Link</th>
-        </tr>
-        <tr>
-          <td>YOUTH GROUP</td>
-          <td>Youth group for exchanging ideas and having fun together.</td>
-          <td>Every two weeks at 7:00 PM</td>
-          <td>KIZ</td>
-          <td>Contact: <a href="mailto:tbd@tbd.tbd">tbd@tbd.tbd</a></td>
-        </tr>
-        <tr>
-          <td>PRAISECAMP</td>
-          <td>A Christian youth camp with 6,500 participants. Worship, seminars, concerts, and more.</td>
-          <td>27.12.2026 – 1.1.2027</td>
-          <td>Messe Basel</td>
-          <td><a href="https://praisecamp.ch/" target="_blank">praisecamp.ch</a></td>
-        </tr>
-        <tr>
-          <td>MELO</td>
-          <td>A Christian youth festival in summer. Fun games, concerts, and chill vibes.</td>
-          <td>10.06 - 12.06.2026</td>
-          <td>Basel</td>
-          <td><a href="https://melo.ch/" target="_blank">melo.ch</a></td>
-        </tr>
-        <tr>
-          <td>MACHERFESTIVAL</td>
-          <td>A 4-day DIY festival with workshops and activities.</td>
-          <td>07.08 - 10.08.2025</td>
-          <td>Ferropolis Island</td>
-          <td><a href="https://macherfestival.io/" target="_blank">macherfestival.io</a></td>
-        </tr>
-      </table>
-    </center>
+        <div class="events">
+      <div class="event-card">
+        <h3>YOUTH GROUP</h3>
+        <p><strong>Youth group for exchanging ideas and having fun together.</strong> </p>
+        <p><strong>Datum:</strong> Every two weeks at 7:00 PM</p>
+        <p><strong>Ort:</strong> KIZ</p>
+        <p><strong>Kontakt:</strong> <a href="mailto:tbd@tbd.tbd">tbd@tbd.tbd</a></p>
+      </div>
+      <div class="event-card">
+        <h3>PRAISECAMP</h3>
+        <p><strong> A Christian youth camp with 6,500 participants. Worship, seminars, concerts, and more.</strong></p>
+        <p><strong>Datum:</strong> 27.12.2026 – 01.01.2027</p>
+        <p><strong>Ort:</strong> Messe Basel</p>
+        <p><strong>Webseite:</strong> <a href="https://praisecamp.ch/" target="_blank">praisecamp.ch</a></p>
+      </div>
+      <div class="event-card">
+        <h3>MELO</h3>
+        <p><strong> A Christian youth festival in summer. Fun games, concerts, and chill vibes.</strong></p>
+        <p><strong>Datum:</strong> 10.06 - 12.06.2026</p>
+        <p><strong>Ort:</strong> Basel</p>
+        <p><strong>Webseite:</strong> <a href="https://melo.ch/" target="_blank">melo.ch</a></p>
+      </div>
+      <div class="event-card">
+        <h3>MACHERFESTIVAL</h3>
+        <p><strong> A 4-day DIY festival with workshops and activities.</strong></p>
+        <p><strong>Datum:</strong> 07.08 - 10.08.2025</p>
+        <p><strong>Ort:</strong> Ferropolis Island</p>
+        <p><strong>Webseite:</strong> <a href="https://macherfestival.io/" target="_blank">macherfestival.io</a></p>
+  </div>
+</div>
   </div>
   <script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
 </body>
 </html>
+
+</body>
+</html>
+
+
