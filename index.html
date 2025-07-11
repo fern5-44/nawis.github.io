@@ -64,46 +64,66 @@
       text-align: center;
     }
 
-    .events {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 60px;
-    }
+  ul.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.event-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  ul.event-list li:last-child {
+    border-bottom: none;
+  }
+  ul.event-list img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .event-info {
+    flex: 1;
+  }
+  .event-info h3 {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: #222;
+  }
+  .event-info p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 1rem;
+  }
+  .event-info a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .event-info a:hover {
+    text-decoration: underline;
+  }
 
-    .event-card {
-      background: #f4f5f2;
-      border-radius: 12px;
-      padding: 20px;
-      width: 280px;
-      box-sizing: border-box;
-      transition: transform 0.3s ease;
+  /* Responsive: auf kleinen Bildschirmen untereinander */
+  @media (max-width: 600px) {
+    ul.event-list li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    .event-card:hover {
-      transform: translateY(-5px);
+    .event-info {
+      margin-top: 15px;
     }
-
-    .event-card h3 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: #222;
+    ul.event-list img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
-
-    .event-card p {
-      font-size: 1rem;
-      margin: 0.5em 0;
-    }
-
-    .event-card a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    .event-card a:hover {
-      text-decoration: underline;
-    }
+  }
   </style>
 </head>
 <body>
@@ -135,37 +155,49 @@
       </figure>
     </div>
 
-    <h2>Events</h2>
-    <div class="events">
-      <div class="event-card">
-        <h3>YOUTH GROUP</h3>
-        <p><strong>Youth group for exchanging ideas and having fun together.</strong></p>
-        <p><strong>Datum:</strong> Every two weeks at 7:00 PM</p>
-        <p><strong>Ort:</strong> KIZ</p>
-        <p><strong>Kontakt:</strong> <a href="mailto:tbd@tbd.tbd">tbd@tbd.tbd</a></p>
-      </div>
-      <div class="event-card">
-        <h3>PRAISECAMP</h3>
-        <p><strong>A Christian youth camp with 6,500 participants. Worship, seminars, concerts, and more.</strong></p>
-        <p><strong>Datum:</strong> 27.12.2026 – 01.01.2027</p>
-        <p><strong>Ort:</strong> Messe Basel</p>
-        <p><strong>Webseite:</strong> <a href="https://praisecamp.ch/" target="_blank">praisecamp.ch</a></p>
-      </div>
-      <div class="event-card">
-        <h3>MELO</h3>
-        <p><strong>A Christian youth festival in summer. Fun games, concerts, and chill vibes.</strong></p>
-        <p><strong>Datum:</strong> 10.06 - 12.06.2026</p>
-        <p><strong>Ort:</strong> Basel</p>
-        <p><strong>Webseite:</strong> <a href="https://melo.ch/" target="_blank">melo.ch</a></p>
-      </div>
-      <div class="event-card">
-        <h3>MACHERFESTIVAL</h3>
-        <p><strong>A 4-day DIY festival with workshops and activities.</strong></p>
-        <p><strong>Datum:</strong> 07.08 - 10.08.2025</p>
-        <p><strong>Ort:</strong> Ferropolis Island</p>
-        <p><strong>Webseite:</strong> <a href="https://macherfestival.io/" target="_blank">macherfestival.io</a></p>
-      </div>
-    </div>
+     <h2>Events</h2>
+    <ul class="event-list">
+      <li>
+        <img src="https://www.screenflex.com/wp-content/uploads/2022/01/tegan-mierle-fDostElVhN8-unsplash-e1642107846104.jpg" alt="Youth Group" />
+        <div class="event-info">
+          <h3>Youth Group</h3>
+          <p><strong>Beschreibung:</strong> Youth group for exchanging ideas and having fun together.</p>
+          <p><strong>Datum:</strong> Every two weeks at 7:00 PM</p>
+          <p><strong>Ort:</strong> KIZ</p>
+          <p><strong>Kontakt:</strong> <a href="mailto:tbd@tbd.tbd">tbd@tbd.tbd</a></p>
+        </div>
+      </li>
+      <li>
+        <img src="https://www.ideaschweiz.ch/fileadmin/_migrated_/idea_2015_01-02_Seite_03_Bild_0002.jpg" alt="Praisecamp" />
+        <div class="event-info">
+          <h3>Praisecamp</h3>
+          <p><strong>Beschreibung:</strong> A Christian youth camp with 6,500 participants. Worship, seminars, concerts, and more.</p>
+          <p><strong>Datum:</strong> 27.12.2026 – 01.01.2027</p>
+          <p><strong>Ort:</strong> Messe Basel</p>
+          <p><strong>Webseite:</strong> <a href="https://praisecamp.ch/" target="_blank" rel="noopener">praisecamp.ch</a></p>
+        </div>
+      </li>
+      <li>
+        <img src="https://melo.ch/wp/wp-content/uploads/2023/06/52157758175_bc341a57ce_k.jpg" alt="MELO" />
+        <div class="event-info">
+          <h3>MELO</h3>
+          <p><strong>Beschreibung:</strong> A Christian youth festival in summer. Fun games, concerts, and chill vibes.</p>
+          <p><strong>Datum:</strong> 10.06 - 12.06.2026</p>
+          <p><strong>Ort:</strong> Basel</p>
+          <p><strong>Webseite:</strong> <a href="https://melo.ch/" target="_blank" rel="noopener">melo.ch</a></p>
+        </div>
+      </li>
+      <li>
+        <img src="https://www.ferropolis.de/images/slider/event.webp" alt="Macherfestival" />
+        <div class="event-info">
+          <h3>Macherfestival</h3>
+          <p><strong>Beschreibung:</strong> A 4-day DIY festival with workshops and activities.</p>
+          <p><strong>Datum:</strong> 07.08 - 10.08.2025</p>
+          <p><strong>Ort:</strong> Ferropolis Island</p>
+          <p><strong>Webseite:</strong> <a href="https://macherfestival.io/" target="_blank" rel="noopener">macherfestival.io</a></p>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <script src="https://fern5-44.github.io/nawis.github.io/tools/navbar.js"></script>
